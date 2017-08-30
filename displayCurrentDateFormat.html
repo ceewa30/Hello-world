@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+</head>
+<body>
+<p id="date"></p>
+<p id="date1"></p>
+<p id="date2"></p>
+<p id="date3"></p>
+<script type="text/javascript">
+	var d = new Date();
+	var mon = [01,02,03,04,05,06,07,08,09,10,11,12];
+	var month = mon[d.getMonth()];
+	var day = d.getDate();
+	var year = d.getFullYear();
+	
+	document.getElementById("date").innerHTML = month + "/" + day + "/" + year;
+	document.getElementById("date1").innerHTML = day + "/" + month + "/" + year;
+	document.getElementById("date2").innerHTML = month + "-" + day + "-" + year;
+	document.getElementById("date3").innerHTML = day + "-" + month + "-" + year;
+</script>
+</body>
+</html>

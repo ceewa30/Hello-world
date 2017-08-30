@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Area of Triangle</title>
+</head>
+<body>
+<p id="area"></p>
+
+<script type="text/javascript">
+	var length = 5;
+	var breath = 6;
+	var height = 7;
+	var perimeter = (length + breath + height)/2;
+	
+	var triangle = Math.sqrt(perimeter * ((perimeter - length) * (perimeter - breath) * (perimeter - height)));
+	document.getElementById("area").innerHTML = triangle;
+</script>
+</body>
+</html>
